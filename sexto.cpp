@@ -36,7 +36,7 @@ int main(){
     //cout << *pont3;
 
     //*pont3 = *pont1;
-    delete pont3;
+    delete pont3; 
     pont3 = pont1;
     cout << *pont3;
     return 0;
