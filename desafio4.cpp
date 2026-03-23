@@ -14,26 +14,37 @@ float potencia(float x, int y){
 }
 
 int main(){
-    float b;
-    int e;
 
-    cout << "Digite um numero real para ser a base!" << endl;
-    cin >> b;
+    while(true){
 
-        while (true){
-            cout << "Deseja elevar a qual expoente? (Digite um numero natural)" << endl;
-            cin >> e;
-            if(e<= 0){
-                cout << " O numero informado nao e natural, digite outro numero!" << endl;
+    
+        float b;
+        int e;
+
+        cout << "Digite um numero real para ser a base!" << endl;
+        cin >> b;
+
+            while (true){
+                cout << "Deseja elevar a qual expoente? (Digite um numero natural)" << endl;
+                cin >> e;
+                if(e<= 0){
+                    cout << " O numero informado nao e natural, digite outro numero!" << endl;
+                }
+                else{
+                    break;
+                }
             }
-            else{
+
+            double respot = potencia(b,e);
+            cout << "O resultado da potencia e: "<< respot << endl;
+
+            int q;
+            cout << "Digite 1 se quiser calcular outra potencia e 0 se nao quiser" << endl;
+            cin >> q;
+            if (q == 0){
                 break;
             }
         }
-
-    double respot=potencia(b,e);
-    cout << "O resultado da potencia e: "<< respot << endl;
-    
-    
+        
     return 0; 
 }
