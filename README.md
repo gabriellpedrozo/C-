@@ -1,3 +1,4 @@
-# Cpp
+# Algoritimos 
 
-learning  C++
+Aprendendo algoritimos com C++
+
